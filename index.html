@@ -436,7 +436,7 @@ async function load(){
   els.sub.textContent = depth === 1
     ? 'Санатты таңдаңыз'
     : depth === 2
-      ? 'Выберите компанию или филиал.'
+      ? ''
       : 'Файлы для скачивания.';
   els.content.innerHTML = `<div class="state">Читаю папку…</div>`;
 
@@ -500,7 +500,7 @@ async function load(){
     zipbar.className = 'zipbar';
     zipbar.innerHTML = `
       <p>Или получите все ${files.length} файлов одним архивом.</p>
-      <button class="zipbtn" id="zipbtn">Скачать всё (.zip)</button>`;
+      <button class="zipbtn" id="zipbtn">Барлығын жүктеу (.zip)</button>`;
     els.content.appendChild(zipbar);
 
     document.getElementById('zipbtn').onclick = async (e) => {
